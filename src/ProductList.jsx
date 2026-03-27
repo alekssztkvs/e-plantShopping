@@ -232,6 +232,12 @@ function ProductList({ onHomeClick }) {
         fontSize: '30px',
         textDecoration: 'none',
     }
+    const titleStyle = {
+        color: 'green',
+        textAlign: 'center',
+        marginTop: '15px',
+
+    }
 
     const handleHomeClick = (e) => {
         e.preventDefault();
@@ -274,6 +280,27 @@ function ProductList({ onHomeClick }) {
             </div>
             {!showCart ? (
                 <div className="product-grid">
+                    {
+                        plantsArray.map((category, index) => (
+                            <div key={index}>
+                                <h2 style={titleStyle}>{category.category}</h2>
+                                <div className='product-list'>
+                                    
+                                {category.plants.map((plant, i) => (
+                                    <div className='product-card' key={i}>
+                                        <p className='product-title'>{plant.name}</p>
+                                        <img className='product-image' src={plant.image} alt={plant.name}></img>
+                                        <p>{plant.description}</p>
+                                        <div className='product-price'>
+                                            <p>{plant.cost}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                                </div>
+                            </div>
+                            
+                        ))
+                    }
 
 
                 </div>
