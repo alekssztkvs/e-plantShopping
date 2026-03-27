@@ -14,7 +14,8 @@
   width: 200px;
   height: 200px;
   /* object-fit: contain; */
-  margin-right: 20px;
+  margin-right: 15px;
+  margin-left: 10px;
 }
 
 .cart-item-details {

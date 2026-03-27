@@ -15,6 +15,10 @@ function App() {
   const handleHomeClick = () => {
     setShowProductList(false);
   };
+  const handleContinueShopping = () => {
+    setShowProductList(false);
+
+  }
 
   return (
     <div className="app-container">

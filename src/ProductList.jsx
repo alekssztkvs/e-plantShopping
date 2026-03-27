@@ -241,6 +241,7 @@ function ProductList({ onHomeClick }) {
         color: 'green',
         textAlign: 'center',
         marginTop: '15px',
+        textShadow: '0px 0px 2px #094d23',
 
     }
 
@@ -253,6 +254,7 @@ function ProductList({ onHomeClick }) {
         e.preventDefault();
         setShowCart(true); // Set showCart to true when cart icon is clicked
     };
+    
     const handlePlantsClick = (e) => {
         e.preventDefault();
         setShowPlants(true); // Set showAboutUs to true when "About Us" link is clicked
@@ -299,7 +301,9 @@ function ProductList({ onHomeClick }) {
                     {
                         plantsArray.map((category, index) => (
                             <div key={index}>
+                                <div className='product-category'>
                                 <h2 style={titleStyle}>{category.category}</h2>
+                                </div>
                                 <div className='product-list'>
                                     
                                 {category.plants.map((plant, i) => (
