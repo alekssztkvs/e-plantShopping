@@ -38,6 +38,18 @@ body {
     text-decoration: none;
    
 }
+.total-items {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 3px;
+    background: red;
+    border-radius: 50%;
+    color: white;
+    padding: 2px 8px;
+    font-size: 14px;
+}
 
 /* Product Grid */
 .product-grid {
@@ -250,3 +262,4 @@ body {
         text-align: center; /* Align text to the center */
       }
   }
+
