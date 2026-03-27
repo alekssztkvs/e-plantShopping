@@ -6,3 +6,4 @@ export default defineConfig({
   base: '/e-plantShopping/',
   plugins: [react()],
 })
+  
